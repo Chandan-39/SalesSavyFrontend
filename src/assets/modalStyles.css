@@ -1,0 +1,125 @@
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* slightly darker backdrop */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal content container */
+.modal-content {
+  background: #fff;
+  padding: 30px 40px; /* a bit more padding for breathing room */
+  border-radius: 12px;
+  width: 90%;
+  max-width: 480px; /* smaller max width for profile modal */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Modal form items (profile fields) */
+.modal-form-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #444;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-form-item strong {
+  color: #222;
+  min-width: 100px;
+  text-align: left;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  align-self: center;
+  min-width: 100px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Secondary button style for cancel or close */
+button:last-child {
+  background: #6c757d;
+}
+
+button:last-child:hover {
+  background: #5a6268;
+}
+
+/* Product details — keep as-is or tweak for your product views */
+.product-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-details img {
+  width: 200px;
+  height: 200px;
+  object-fit: scale-down;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.product-details div {
+  flex: 1;
+}
+
+.product-details p {
+  margin: 5px 0;
+}
+
+/* Flex containers */
+.full-products {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.product-details-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
