@@ -1,29 +1,90 @@
-# 📈 SalesSavy Frontend
+# SalesSavyFrontend
 
-**SalesSavy** is a sleek, responsive web application built with **React** for visualizing and managing sales data. It delivers real-time overviews, intuitive charts, and performance insights to empower sales teams.
-
----
-
-## 🚀 Features
-
-- **Dashboard Overview** – Separate dashboards are present for customers and admin so that customers cannot interact with admindashboard.
-- **Interactive Charts** – Sales trends over time, product performance, and regional distributions.
-- **Data Filtering** – Filter results by date range, product category, and more.
-- **Responsive Design** – Clean UI that adapts to desktop.
-- **API Integration** – Fetches data from SalesSavy backend via REST endpoints.
+SalesSavyFrontend is the frontend user interface for the Sales Savvy platform—a smart solution for seamless sales management and customer engagement.
 
 ---
 
-## 🛠️ Tech Stack
+## Table of Contents
 
-- **Frontend**: React, JavaScript (ES6+), HTML5, CSS3
-- **State Management**: React Context / Redux (if applicable)
+- [About](#about)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Related Projects](#related-projects)
 
-## 📦 Installation & Setup
+---
 
-1. **Clone the repo**
+## About
 
-   ```bash
-   git clone https://github.com/Chandan-39/SalesSavyFrontend.git
-   cd SalesSavyFrontend
+**SalesSavyFrontend** offers a modern, responsive user interface that connects with the Sales Savvy backend. It is built to facilitate sales activities, product browsing, order management, and improving productivity and user experience for sales teams.
+
+---
+
+## Features
+
+- Responsive sales dashboard UI  
+- Product listing 
+- User authentication and authorization  
+- Order creation and management  
+- Integration with backend APIs
+- Analytics and reporting dashboard (optional)
+---
+
+## Tech Stack
+
+- **Framework:** React
+- **Language:** JavaScript
+- **Styling:** CSS Modules / Styled-Components
+- **Routing:** React Router DOM
+- **Other:**
+
+---
+## Getting Started
+
+### Prerequisites
+- npm 
+
+### Installation
+
+Clone the repository:
+git clone https://github.com/Chandan-39/SalesSavyFrontend.git
+cd SalesSavyFrontend
+
+text
+
+Install dependencies:
+npm install
+
+text
+
+Start the development server:
+npm start
+
+text
+
+Open your browser and visit `http://localhost:5174` to view the app.
+
+> ⚠️ **Note:** Ensure your backend API is running and accessible. Update API endpoint URLs if needed.
+
+---
+
+## Project Structure
+
+src/
+├── assets/
+├── components/
+├── pages/
+├── services/
+├── hooks/
+├── styles/
+├── App.js
+└── index.js
+
+## Related Projects
+
+- [Sales-Savvy-Backend](https://github.com/Indraja415/Sales-Savvy-Backend) - Backend API server for Sales Savvy
+
+**Author:** [Chandan-39](https://github.com/Chandan-39)
+ 
 
